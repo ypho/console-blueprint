@@ -1,6 +1,6 @@
 <?php
 
-namespace Ypho\ConsoleBlueprint;
+namespace Ypho\Console;
 
 class Container extends \Illuminate\Container\Container
 {

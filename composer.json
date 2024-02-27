@@ -11,12 +11,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "Ypho\\ConsoleBlueprint\\": "src/"
+            "Ypho\\Console\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Ypho\\ConsoleBlueprint\\": "tests/"
+            "Ypho\\Console\\": "tests/"
         }
     },
     "require": {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ypho\ConsoleBlueprint\Commands;
+namespace Ypho\Console\Commands;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Command\Command as SymfonyCommand;

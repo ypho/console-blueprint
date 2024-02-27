@@ -1,11 +1,11 @@
 <?php
 
-namespace Ypho\ConsoleBlueprint\Commands;
+namespace Ypho\Console\Commands;
 
 use Illuminate\Console\Application;
 use Illuminate\Events\Dispatcher;
 use PHPUnit\Framework\TestCase;
-use Ypho\ConsoleBlueprint\Container;
+use Ypho\Console\Container;
 
 class CommandTestCase extends TestCase
 {
