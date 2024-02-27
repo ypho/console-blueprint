@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+
+use Illuminate\Console\Application;
+use Illuminate\Events\Dispatcher;
+use Ypho\ConsoleBlueprint\Container;
+
+require __DIR__.'/vendor/autoload.php';
+
+$container = new Container();
+$events = new Dispatcher($container);
+$artisan = new Application($container, $events, 'v1');
+
+$artisan->setName('Heartbreak Console');
+
+// General commands
+$artisan->resolve(\Ypho\ConsoleBlueprint\Commands\Heartbeat::class);
+
+$artisan->run();

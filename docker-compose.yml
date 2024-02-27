@@ -1,0 +1,15 @@
+version: '3'
+services:
+    console:
+        tty: true
+        build:
+            dockerfile: ./docker/Dockerfile
+        volumes:
+            - '.:/var/www/html'
+        networks:
+            - local
+        extra_hosts:
+            host.docker.internal: host-gateway
+networks:
+    local:
+        driver: bridge

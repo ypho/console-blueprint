@@ -1,0 +1,32 @@
+{
+    "name": "ypho/console-blueprint",
+    "description": "An empty project for building a console application from scratch",
+    "type": "project",
+    "license": "GNU GPL v3",
+    "authors": [
+        {
+            "name": "Ivo Geersen",
+            "email": "ivo@ypho.nl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ypho\\ConsoleBlueprint\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ypho\\ConsoleBlueprint\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.3",
+        "illuminate/console": "^10.45",
+        "illuminate/events": "^10.45"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0",
+        "phpstan/phpstan": "^1.10",
+        "symfony/var-dumper": "^7.0"
+    }
+}
